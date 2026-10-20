@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishant Kumar | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>NK.</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Animated Welcome -->
+    <header id="home" class="hero">
+        <p class="welcome">WELCOME TO MY WEBSITE</p>
+
+        <h1>Hello, I'm <span>Nishant Kumar</span></h1>
+
+        <h2>Computer Teacher | Web Developer</h2>
+
+        <p>
+            Welcome to my personal portfolio.
+            Explore my skills, experience and projects.
+        </p>
+
+        <a href="#about" class="btn">Explore My Website</a>
+
+        <!-- Digital Clock -->
+        <div class="clock-box">
+            <h3>Live Date & Time</h3>
+            <div id="clock">Loading...</div>
+            <p id="date"></p>
+        </div>
+    </header>
+
+    <!-- Digital Visiting Card -->
+    <section id="about" class="card-section">
+        <div class="visiting-card">
+            <div class="card-logo">NK</div>
+
+            <h2>Nishant Kumar</h2>
+
+            <p>Computer Teacher</p>
+            <p>Web Development Learner</p>
+            <p>Shamli, Uttar Pradesh</p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="content-section">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I am Nishant Kumar.
+            I am interested in computer education,
+            web development and learning new technologies.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="content-section">
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill">💻 Computer Teaching</div>
+            <div class="skill">📄 MS Office</div>
+            <div class="skill">📝 MS Word</div>
+            <div class="skill">🌐 HTML</div>
+            <div class="skill">🎨 CSS</div>
+            <div class="skill">🐍 Python - Learning</div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="content-section">
+        <h2>My Resume</h2>
+
+        <p>
+            Click below to download my resume.
+        </p>
+
+        <a href="resume.pdf" download class="btn">
+            📄 Download Resume
+        </a>
+
+        <p class="small-note">
+            Note: Add your actual resume PDF to the website folder
+            and name it resume.pdf.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+
+        <p>Let's connect and work together.</p>
+
+        <a
+            href="https://wa.me/919548181992"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn whatsapp">
+            📱 Contact on WhatsApp
+        </a>
+
+        <br><br>
+
+        <a
+            href="https://www.instagram.com/Nishant.rana0001/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn">
+            📸 Visit Instagram
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Nishant Kumar | Personal Portfolio</p>
+        <p>Made with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+
+            document.getElementById("clock").textContent =
+                now.toLocaleTimeString("en-IN");
+
+            document.getElementById("date").textContent =
+                now.toLocaleDateString("en-IN", {
+                    weekday: "long",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric"
+                });
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>
